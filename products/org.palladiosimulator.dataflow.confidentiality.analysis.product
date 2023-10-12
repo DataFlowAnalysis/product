@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="DataFlowAnalysis Product" uid="org.palladiosimulator.dataflow.confidentiality.analysis.product" id="org.palladiosimulator.dataflow.confidentiality.analysis.product.DataFlowAnalysisProduct" application="org.eclipse.ui.ide.workbench" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="DataFlowAnalysis Product" uid="org.palladiosimulator.dataflow.confidentiality.analysis" id="org.palladiosimulator.dataflow.confidentiality.analysis.product.DataFlowAnalysisProduct" application="org.eclipse.ui.ide.workbench" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
 
    <configIni use="default">
    </configIni>
@@ -11,6 +11,7 @@
       </vmArgsMac>
    </launcherArgs>
 
+
    <launcher>
       <win useIco="false">
          <bmp/>
@@ -18,7 +19,9 @@
    </launcher>
 
    <vm>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</linux>
    </vm>
+
 
    <plugins>
    </plugins>
@@ -74,6 +77,11 @@
       <feature id="org.eclipse.jdt.bcoview.feature" installMode="root"/>
       <feature id="org.eclipse.e4.rcp.source" installMode="root"/>
       <feature id="org.eclipse.e4.rcp" installMode="root"/>
+      <feature id="org.eclipse.e4.core.tools.feature" installMode="root"/>
+      <feature id="org.eclipse.epp.mpc" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.discovery.feature" installMode="root"/>
+      <feature id="org.eclipse.userstorage" installMode="root"/>
+      <feature id="org.eclipse.oomph.p2" installMode="root"/>
    </features>
 
    <configurations>
@@ -83,5 +91,12 @@
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
    </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
 
 </product>
