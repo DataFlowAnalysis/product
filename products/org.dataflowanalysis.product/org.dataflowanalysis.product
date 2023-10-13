@@ -45,7 +45,7 @@ https://www.dataflowanalysis.com
    </plugins>
 
    <features>
-      <feature id="org.palladiosimulator.dataflow.confidentiality.analysis" installMode="root"/>
+      <feature id="org.dataflowanalysis.product.feature" installMode="root"/>
       <feature id="org.eclipse.help" installMode="root"/>
       <feature id="org.eclipse.sdk" installMode="root"/>
       <feature id="org.eclipse.equinox.p2.core.feature" installMode="root"/>

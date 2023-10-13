@@ -68,11 +68,16 @@
     </location>
 
 	<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-			<unit id="org.palladiosimulator.dataflow.dictionary.characterized" version="0.0.0"/>
-			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.dddsl" version="0.0.0"/>
-			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.model" version="0.0.0"/>
-			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.model.profile" version="0.0.0"/>
 			<unit id="org.palladiosimulator.dataflow.nodecharacteristics" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.nodecharacteristics.edit" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.nodecharacteristics.editor" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.feature.feature.group" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.characterized.feature.feature.group" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.ui.feature.feature.group" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.model.feature.feature.group" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.editor.tree.feature.feature.group" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.feature.feature.group" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.dddsl.feature.feature.group" version="0.0.0"/>
 			<repository location="https://dataflowanalysis.github.io/updatesite/nightly/pcm-dataflowanalysis-extension/"/>
 	</location>
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
@@ -112,6 +117,10 @@
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 			<unit id="org.palladiosimulator.editors.sirius.feature.feature.group" version="0.0.0"/>
 			<repository location="https://updatesite.palladio-simulator.com/palladio-editors-sirius/nightly/"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
+			<unit id="org.palladiosimulator.editors.tree.feature.feature.group" version="0.0.0"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-editors-tree/nightly/"/>
 		</location>
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 			<unit id="org.palladiosimulator.architecturaltemplates.api" version="0.0.0"/>
