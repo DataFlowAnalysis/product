@@ -18,7 +18,7 @@ https://www.dataflowanalysis.com
 
    <configIni use="default">
    </configIni>
-   
+
    <launcherArgs>
       <programArgs>-consoleLog -console -perspective org.palladiosimulator.pcmbench.perspectives.palladio --launcher.defaultAction openFile --launcher.appendVmargs
       </programArgs>
@@ -28,24 +28,22 @@ https://www.dataflowanalysis.com
       </vmArgsMac>
    </launcherArgs>
 
-   <vm>
-      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</linux>
-      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</macos>
-      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</windows>
-   </vm>
-
-
    <launcher>
       <win useIco="false">
          <bmp/>
       </win>
    </launcher>
 
+   <vm>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</linux>
+      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</macos>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</windows>
+   </vm>
+
    <plugins>
    </plugins>
 
    <features>
-      <feature id="org.dataflowanalysis.product.feature" installMode="root"/>
       <feature id="org.eclipse.help" installMode="root"/>
       <feature id="org.eclipse.sdk" installMode="root"/>
       <feature id="org.eclipse.equinox.p2.core.feature" installMode="root"/>
@@ -76,6 +74,8 @@ https://www.dataflowanalysis.com
       <feature id="org.eclipse.equinox.p2.discovery.feature" installMode="root"/>
       <feature id="org.eclipse.userstorage" installMode="root"/>
       <feature id="org.eclipse.oomph.p2" installMode="root"/>
+      <feature id="org.dataflowanalysis.product.editors.feature" installMode="root"/>
+      <feature id="org.dataflowanalysis.product.feature" installMode="root"/>
    </features>
 
    <configurations>
@@ -84,7 +84,7 @@ https://www.dataflowanalysis.com
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
-	  <property name="org.eclipse.core.resources/encoding" value="UTF-8" />
+      <property name="org.eclipse.core.resources/encoding" value="UTF-8" />
       <property name="org.eclipse.ui/org.eclipse.ui.edit.text.encoding" value="UTF-8" />
    </configurations>
 

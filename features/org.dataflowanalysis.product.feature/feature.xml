@@ -170,4 +170,11 @@
 	  <import plugin="org.palladiosimulator.dataflow.nodecharacteristics.editor" version="0.1.0" match="greaterOrEqual"/>
    </requires>
 
+   <plugin
+         id="org.palladiosimulator.dataflow.confidentiality.analysis"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
 </feature>

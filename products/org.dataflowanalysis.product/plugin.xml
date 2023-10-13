@@ -12,6 +12,14 @@
                name="appName"
                value="DataFlowAnalysis Product">
          </property>
+         <property
+               name="aboutImage"
+               value="/org.palladiosimulator.pcm.ui/about.png">
+         </property>
+         <property
+               name="aboutText"
+               value="This is the Data Flow Analysis product build, which is preconfigured with the DataFlowAnalysis Core Features.&#x0A;&#x0A;Version: DataFlowAnalysis Product 1.0.0&#x0A;&#x0A;We are awesome.&#x0A;&#x0A;https://www.dataflowanalysis.com">
+         </property>
       </product>
    </extension>
 
