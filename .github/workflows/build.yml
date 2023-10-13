@@ -1,14 +1,7 @@
 name: Build Updatesite
 
 on:
-  push:
-    branches: [main]
-  release:
-    types: [created]
-  pull_request:
   workflow_dispatch:
-  schedule:
-    - cron: '0 5 * * 0' # Runs at 05:00, only on Sunday.
 
 jobs:
   build:
