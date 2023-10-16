@@ -14,4 +14,3 @@ jobs:
       REMOTE_PORT: ${{ secrets.PALLADIO_REMOTE_PORT }}
       REMOTE_USER: ${{ secrets.PALLADIO_REMOTE_USER }}
       REMOTE_TARGET: ${{ secrets.PALLADIO_REMOTE_TARGET }}
-	  
