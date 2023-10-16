@@ -7,6 +7,9 @@ jobs:
     uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@v3.4
     with:
       use-display-output: true
+      no-caching: true
+      java-version: 17
+      runner-label: ubuntu-latest
       deploy-updatesite: 'products/org.dataflowanalysis.product/target/deploy'
     secrets:
       SERVER_SSH_KEY: ${{ secrets.PALLADIO_UPDATESITE_SSH }}
