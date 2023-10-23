@@ -7,6 +7,7 @@ jobs:
     uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@v3.4
     with:
       use-display-output: true
+      skip-branch-deploy: false
       no-caching: true
       java-version: 17
       runner-label: ubuntu-latest
