@@ -68,9 +68,7 @@
     </location>
 
 	<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-			<unit id="org.palladiosimulator.dataflow.nodecharacteristics" version="0.0.0"/>
-			<unit id="org.palladiosimulator.dataflow.nodecharacteristics.edit" version="0.0.0"/>
-			<unit id="org.palladiosimulator.dataflow.nodecharacteristics.editor" version="0.0.0"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.nodecharacteristics.feature" version="0.0.0"/>
 			<unit id="org.palladiosimulator.dataflow.dictionary.feature.feature.group" version="0.0.0"/>
 			<unit id="org.palladiosimulator.dataflow.dictionary.characterized.feature.feature.group" version="0.0.0"/>
 			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.ui.feature.feature.group" version="0.0.0"/>
