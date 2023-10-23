@@ -74,7 +74,6 @@ https://www.dataflowanalysis.com
       <feature id="org.eclipse.equinox.p2.discovery.feature" installMode="root"/>
       <feature id="org.eclipse.userstorage" installMode="root"/>
       <feature id="org.eclipse.oomph.p2" installMode="root"/>
-      <feature id="org.dataflowanalysis.product.editors.feature" installMode="root"/>
       <feature id="org.dataflowanalysis.product.feature" installMode="root"/>
    </features>
 
