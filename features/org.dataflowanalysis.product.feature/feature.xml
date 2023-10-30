@@ -156,8 +156,9 @@
       <import plugin="org.palladiosimulator.architecturaltemplates.ui" version="1.0.1" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.pcm.stoex.ui" version="5.0.0" match="greaterOrEqual"/>
 	  <import feature="org.palladiosimulator.editors.sirius.feature" version="5.1.0" match="compatible"/>
-
-	  <import plugin="org.palladiosimulator.dataflow.confidentiality.analysis" version="1.0.0" match="compatible"/>
+	  <!--Data Flow Analysis-->
+	  <import feature="org.dataflowanalysis.analysis.feature" version="1.0.0" match="compatible"/>
+      <!--PCM Data Flow Analysis Extension-->
       <import feature="org.palladiosimulator.dataflow.confidentiality.pcm.feature" version="5.1.0" match="compatible"/>
    </requires>
 </feature>
