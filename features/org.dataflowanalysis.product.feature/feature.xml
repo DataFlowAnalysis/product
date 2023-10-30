@@ -158,16 +158,7 @@
 	  <import feature="org.palladiosimulator.editors.sirius.feature" version="5.1.0" match="compatible"/>
 
 	  <import plugin="org.palladiosimulator.dataflow.confidentiality.analysis" version="1.0.0" match="compatible"/>
-      <import feature="org.palladiosimulator.dataflow.dictionary.feature" version="5.1.0" match="greaterOrEqual"/>
-	  <import feature="org.palladiosimulator.dataflow.dictionary.characterized.feature" version="5.1.0" match="greaterOrEqual"/>
-	  <import feature="org.palladiosimulator.dataflow.confidentiality.pcm.ui.feature" version="0.1.0" match="greaterOrEqual"/>
-	  <import feature="org.palladiosimulator.dataflow.confidentiality.pcm.model.feature" version="0.1.0" match="greaterOrEqual"/>
-	  <import feature="org.palladiosimulator.dataflow.confidentiality.pcm.editor.tree.feature" version="0.1.0" match="greaterOrEqual"/>
-	  <import feature="org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.feature" version="0.1.0" match="greaterOrEqual"/>
-	  <import feature="org.palladiosimulator.dataflow.confidentiality.pcm.dddsl.feature" version="0.1.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.dataflow.nodecharacteristics" version="0.1.0" match="greaterOrEqual"/>
-	  <import plugin="org.palladiosimulator.dataflow.nodecharacteristics.edit" version="0.1.0" match="greaterOrEqual"/>
-	  <import plugin="org.palladiosimulator.dataflow.nodecharacteristics.editor" version="0.1.0" match="greaterOrEqual"/>
+      <import feature="org.palladiosimulator.dataflow.confidentiality.pcm.feature" version="5.1.0" match="compatible"/>
    </requires>
 
    <plugin
