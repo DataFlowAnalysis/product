@@ -160,12 +160,4 @@
 	  <import plugin="org.palladiosimulator.dataflow.confidentiality.analysis" version="1.0.0" match="compatible"/>
       <import feature="org.palladiosimulator.dataflow.confidentiality.pcm.feature" version="5.1.0" match="compatible"/>
    </requires>
-
-   <plugin
-         id="org.palladiosimulator.dataflow.confidentiality.analysis"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
 </feature>
