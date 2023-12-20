@@ -141,11 +141,6 @@
 			<repository location="https://updatesite.palladio-simulator.com/palladio-thirdparty-yakindustatecharts/nightly/"/>
 		</location>
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-			<unit id="tools.mdsd.library.standalone.initialization.log4j.feature.feature.group" version="0.0.0"/>
-			<unit id="tools.mdsd.library.standalone.initialization.emfprofiles.feature.feature.group" version="0.0.0"/>
-			<repository location="https://updatesite.mdsd.tools/library-standaloneinitialization/nightly/"/>
-		</location>
-		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 			<unit id="de.uka.ipd.sdq.workflow.feature.mdsd.feature.group" version="0.0.0"/>
 			<repository location="https://updatesite.palladio-simulator.com/palladio-supporting-workflowengine/nightly/"/>
 		</location>
