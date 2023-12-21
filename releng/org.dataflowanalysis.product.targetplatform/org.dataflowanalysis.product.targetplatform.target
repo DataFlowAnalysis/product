@@ -32,6 +32,8 @@
       <unit id="org.eclipse.xsd.sdk.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.tips.feature.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.emf.mwe2.launcher.feature.group" version="0.0.0"/>
+	  <unit id="org.eclipse.emf.mwe2.runtime.sdk.feature.group" version="0.0.0"/>
+	  <unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="0.0.0"/>
 	  <unit id="org.eclipse.equinox.executable.feature.group" version="0.0.0"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
@@ -54,7 +56,7 @@
 	  <unit id="org.antlr.runtime" version="0.0.0"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-      <repository location="https://updatesite.mdsd.tools/ecore-workflow/releases/latest/"/>
+      <repository location="https://updatesite.mdsd.tools/ecore-workflow/nightly/"/>
       <unit id="tools.mdsd.ecoreworkflow.mwe2lib.feature.feature.group" version="0.0.0"/>
     </location>
 	<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">

@@ -122,6 +122,9 @@
       <import feature="org.eclipse.oomph.p2" version="1.25.0" match="compatible"/>
       <import feature="org.eclipse.equinox.p2.rcp.feature" version="1.4.1800" match="compatible"/>
       <import feature="org.eclipse.rcp" version="4.26.0" match="compatible"/>
+	  <import feature="org.eclipse.emf.mwe2.runtime.sdk"/>
+	  <import feature="org.eclipse.emf.mwe2.launcher"/>
+	  <import feature="org.eclipse.emf.mwe2.language.sdk"/>
 	  <import plugin="de.uka.ipd.sdq.identifier"/>
       <import plugin="de.uka.ipd.sdq.probfunction"/>
       <import plugin="de.uka.ipd.sdq.stoex"/>
@@ -140,6 +143,7 @@
       <import plugin="tools.mdsd.library.standalone.initialization.log4j" version="0.3.0" match="greaterOrEqual"/>
       <import plugin="tools.mdsd.library.standalone.initialization.emfprofiles" version="0.3.0" match="greaterOrEqual"/>
 	  <import plugin="tools.mdsd.library.emfeditutils" version="0.1.0" match="greaterOrEqual"/>
+	  <import plugin="tools.mdsd.ecoreworkflow.mwe2lib"/>
       <import plugin="org.palladiosimulator.pcm" version="5.1.0" match="greaterOrEqual"/>
 	  <import plugin="org.palladiosimulator.pcm.editor" version="5.1.0" match="greaterOrEqual"/>
 	  <import plugin="org.palladiosimulator.pcm.edit" version="5.1.0" match="greaterOrEqual"/>
