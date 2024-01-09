@@ -111,17 +111,17 @@
       <import feature="org.eclipse.ocl.ui" version="2.18.0" match="compatible"/>
       <import feature="org.eclipse.equinox.p2.core.feature" version="1.6.1600" match="compatible"/>
       <import feature="org.eclipse.equinox.p2.user.ui" version="2.4.1800" match="compatible"/>
-      <import feature="org.eclipse.platform" version="4.26.0" match="compatible"/>
-      <import feature="org.eclipse.sdk" version="4.26.0" match="compatible"/>
+      <import feature="org.eclipse.platform" version="4.27.0" match="compatible"/>
+      <import feature="org.eclipse.sdk" version="4.27.0" match="compatible"/>
       <import feature="org.eclipse.sirius.runtime" version="7.0.6" match="compatible"/>
       <import feature="org.eclipse.jdt" version="3.18.0" match="compatible"/>
-      <import feature="org.eclipse.e4.rcp" version="4.26.0" match="compatible"/>
+      <import feature="org.eclipse.e4.rcp" version="4.27.0" match="compatible"/>
       <import feature="org.eclipse.epp.mpc" version="1.10.1"/>
       <import feature="org.eclipse.equinox.p2.discovery.feature" version="1.2.1200" match="compatible"/>
       <import feature="org.eclipse.equinox.p2.extras.feature" version="1.4.1800" match="compatible"/>
       <import feature="org.eclipse.oomph.p2" version="1.25.0" match="compatible"/>
       <import feature="org.eclipse.equinox.p2.rcp.feature" version="1.4.1800" match="compatible"/>
-      <import feature="org.eclipse.rcp" version="4.26.0" match="compatible"/>
+      <import feature="org.eclipse.rcp" version="4.27.0" match="compatible"/>
 	  <import feature="org.eclipse.emf.mwe2.runtime.sdk"/>
 	  <import feature="org.eclipse.emf.mwe2.launcher"/>
 	  <import feature="org.eclipse.emf.mwe2.language.sdk"/>
@@ -136,34 +136,34 @@
 	  <import plugin="de.uka.ipd.sdq.errorhandling"/>
       <import plugin="de.uka.ipd.sdq.stoex.analyser"/>
 	  <import plugin="de.uka.ipd.sdq.pcm.stochasticexpressions"/>
-      <import plugin="org.modelversioning.emfprofile" version="5.1.0" match="greaterOrEqual"/>
-      <import plugin="org.modelversioning.emfprofile.registry" version="5.1.0" match="greaterOrEqual"/>
+      <import plugin="org.modelversioning.emfprofile" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.modelversioning.emfprofile.registry" version="5.2.0" match="greaterOrEqual"/>
       <import plugin="org.modelversioning.emfprofile.edit" version="1.0.0" match="greaterOrEqual"/>
 	  <import plugin="tools.mdsd.library.standalone.initialization" version="0.3.0" match="greaterOrEqual"/>
       <import plugin="tools.mdsd.library.standalone.initialization.log4j" version="0.3.0" match="greaterOrEqual"/>
       <import plugin="tools.mdsd.library.standalone.initialization.emfprofiles" version="0.3.0" match="greaterOrEqual"/>
 	  <import plugin="tools.mdsd.library.emfeditutils" version="0.1.0" match="greaterOrEqual"/>
 	  <import plugin="tools.mdsd.ecoreworkflow.mwe2lib"/>
-      <import plugin="org.palladiosimulator.pcm" version="5.1.0" match="greaterOrEqual"/>
-	  <import plugin="org.palladiosimulator.pcm.editor" version="5.1.0" match="greaterOrEqual"/>
-	  <import plugin="org.palladiosimulator.pcm.edit" version="5.1.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.pcm" version="5.2.0" match="greaterOrEqual"/>
+	  <import plugin="org.palladiosimulator.pcm.editor" version="5.2.0" match="greaterOrEqual"/>
+	  <import plugin="org.palladiosimulator.pcm.edit" version="5.2.0" match="greaterOrEqual"/>
 	  <import plugin="org.palladiosimulator.indirections" version="4.3.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.mdsdprofiles.api" version="5.1.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.mdsdprofiles.api" version="5.2.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.indirections.edit" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.commons.stoex" version="5.0.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.commons" version="5.1.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.architecturaltemplates.api" version="1.0.4" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.architecturaltemplates" version="1.0.3" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.editors.commons.propertytabs"/>
-      <import plugin="org.palladiosimulator.editors.commons.dialogs" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.mdsdprofiles" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.architecturaltemplates.ui" version="1.0.1" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.pcm.stoex.ui" version="5.0.0" match="greaterOrEqual"/>
-	  <import feature="org.palladiosimulator.editors.sirius.feature" version="5.1.0" match="compatible"/>
+      <import plugin="org.palladiosimulator.commons.stoex" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.commons" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.architecturaltemplates.api" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.architecturaltemplates" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.editors.commons.propertytabs" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.editors.commons.dialogs" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.mdsdprofiles" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.architecturaltemplates.ui" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.pcm.stoex.ui" version="5.2.0" match="greaterOrEqual"/>
+	  <import feature="org.palladiosimulator.editors.sirius.feature" version="5.2.0" match="compatible"/>
 	  <!--Data Flow Analysis-->
 	  <import feature="org.dataflowanalysis.analysis.feature" version="1.0.0" match="compatible"/>
       <!--PCM Data Flow Analysis Extension-->
-      <import feature="org.dataflowanalysis.pcm.extension.feature" version="5.1.0" match="compatible"/>
+      <import feature="org.dataflowanalysis.pcm.extension.feature" version="5.2.0" match="compatible"/>
       <!-- DFD Metamodel-->
       <import feature="org.dataflowanalysis.dfd.datadictionary.feature" version="1.0.0" match="compatible"/>
 	  <import feature="org.dataflowanalysis.dfd.dataflowdiagram.feature" version="1.0.0" match="compatible"/>
