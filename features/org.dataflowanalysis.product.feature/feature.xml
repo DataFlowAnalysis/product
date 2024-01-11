@@ -163,7 +163,7 @@
 	  <!--Data Flow Analysis-->
 	  <import feature="org.dataflowanalysis.analysis.feature" version="1.0.0" match="compatible"/>
       <!--PCM Data Flow Analysis Extension-->
-      <import feature="org.dataflowanalysis.pcm.extension.feature" version="5.2.0" match="compatible"/>
+      <import feature="org.dataflowanalysis.pcm.extension.feature" version="5.1.0" match="compatible"/>
       <!-- DFD Metamodel-->
       <import feature="org.dataflowanalysis.dfd.datadictionary.feature" version="1.0.0" match="compatible"/>
 	  <import feature="org.dataflowanalysis.dfd.dataflowdiagram.feature" version="1.0.0" match="compatible"/>
