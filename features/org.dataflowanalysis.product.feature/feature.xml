@@ -23,7 +23,7 @@
       <import plugin="org.eclipse.equinox.common" version="3.17.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext.xbase.lib" version="2.29.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext.util"/>
-      <import plugin="org.antlr.runtime" version="3.2.0" match="compatible"/>
+      <import plugin="org.antlr.runtime"/>
       <import plugin="org.eclipse.xtext.ide"/>
       <import plugin="org.eclipse.xtext.xbase.ide"/>
       <import plugin="org.eclipse.xtext.ui.shared"/>
@@ -125,6 +125,9 @@
       <import feature="org.eclipse.emf.mwe2.runtime.sdk"/>
       <import feature="org.eclipse.emf.mwe2.launcher"/>
       <import feature="org.eclipse.emf.mwe2.language.sdk"/>
+      <import feature="org.junit.jupiter.api"/>
+      <import feature="de.itemis.xtext.antlr"/>
+      <import feature="de.itemis.xtext.antlr"/>
       <!-- Palladio/MDSD-Tools -->
       <import plugin="de.uka.ipd.sdq.identifier"/>
       <import plugin="de.uka.ipd.sdq.probfunction"/>
@@ -145,6 +148,7 @@
       <import plugin="tools.mdsd.library.standalone.initialization.emfprofiles" version="0.3.0" match="greaterOrEqual"/>
       <import plugin="tools.mdsd.library.emfeditutils" version="0.1.0" match="greaterOrEqual"/>
       <import plugin="tools.mdsd.ecoreworkflow.mwe2lib"/>
+      <import plugin="tools.mdsd.junit5utils"/>
       <import plugin="org.palladiosimulator.pcm" version="5.2.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.pcm.editor" version="5.2.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.pcm.edit" version="5.2.0" match="greaterOrEqual"/>
