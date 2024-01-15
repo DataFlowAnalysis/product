@@ -25,6 +25,7 @@
       <unit id="org.eclipse.jdt.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.oomph.setup.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.ocl.build.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.ocl.all.sdk.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.pde.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.sdk.feature.group" version="0.0.0"/>
