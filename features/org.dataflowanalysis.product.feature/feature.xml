@@ -125,7 +125,6 @@
       <import feature="org.eclipse.emf.mwe2.runtime.sdk"/>
       <import feature="org.eclipse.emf.mwe2.launcher"/>
       <import feature="org.eclipse.emf.mwe2.language.sdk"/>
-      <import feature="de.itemis.xtext.antlr"/>
       <!-- Palladio/MDSD-Tools -->
       <import plugin="de.uka.ipd.sdq.identifier"/>
       <import plugin="de.uka.ipd.sdq.probfunction"/>
