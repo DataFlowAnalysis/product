@@ -102,6 +102,7 @@
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 			<unit id="org.objectweb.asm" version="0.0.0"/>
 			<unit id="org.eclipse.xtext.sdk.feature.group" version="0.0.0"/>
+			<unit id="org.eclipse.xtext.testing" version="0.0.0"/>
 			<unit id="org.hamcrest.core" version="0.0.0"/>
 			<unit id="org.apache.commons.io" version="0.0.0"/>
 			<repository location="https://download.eclipse.org/releases/2023-03/"/>
