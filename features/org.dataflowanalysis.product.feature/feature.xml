@@ -108,8 +108,9 @@
       <import plugin="org.osgi.service.upnp" version="1.2.0" match="equivalent"/>
       <import plugin="org.osgi.service.useradmin" version="1.1.0" match="equivalent"/>
       <import plugin="org.osgi.service.wireadmin" version="1.0.0" match="equivalent"/>
-      <import feature="org.eclipse.ocl.all.sdk" version="5.18.0" match="compatible"/>
-      <import feature="org.eclipse.ocl.build" version="6.18.0" match="compatible"/>
+      <import feature="org.eclipse.ocl.all.sdk"/>
+      <import feature="org.eclipse.ocl.build"/>
+      <import feature="org.eclipse.ocl.examples"/>
       <import plugin="org.eclipse.ocl.ecore"/>
       <import feature="org.eclipse.equinox.p2.core.feature" version="1.6.1600" match="compatible"/>
       <import feature="org.eclipse.equinox.p2.user.ui" version="2.4.1800" match="compatible"/>
