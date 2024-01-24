@@ -4,10 +4,11 @@ on: workflow_dispatch
 
 jobs:
   DataFlowAnalysis-Product:
-    uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@v3.4
+    uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@releaseBranch
     with:
       use-display-output: true
       no-caching: true
+      release-version: '1.0.0'
       java-version: 17
       runner-label: ubuntu-latest
       deploy-updatesite: 'products/org.dataflowanalysis.product/target/deploy'

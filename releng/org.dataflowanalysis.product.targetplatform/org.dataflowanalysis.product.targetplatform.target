@@ -81,17 +81,11 @@
 	<repository location="https://download.eclipse.org/tools/orbit/downloads/2021-12/"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-	<unit id="org.dataflowanalysis.pcm.extension.feature.feature.group" version="0.0.0"/>
-	<repository location="https://dataflowanalysis.github.io/updatesite/nightly/pcm-dataflowanalysis-extension/"/>
-    </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-	<unit id="org.dataflowanalysis.analysis.feature.feature.group" version="0.0.0"/>
-	<repository location="https://dataflowanalysis.github.io/updatesite/nightly/dataflowanalysis/"/>
-    </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 	<unit id="org.dataflowanalysis.dfd.datadictionary.feature.feature.group" version="0.0.0"/>
 	<unit id="org.dataflowanalysis.dfd.dataflowdiagram.feature.feature.group" version="0.0.0"/>
-	<repository location="https://dataflowanalysis.github.io/updatesite/nightly/dfd-metamodel/"/>
+	<unit id="org.dataflowanalysis.analysis.feature.feature.group" version="0.0.0"/>
+	<unit id="org.dataflowanalysis.pcm.extension.feature.feature.group" version="0.0.0"/>
+	<repository location="https://dataflowanalysis.github.io/updatesite/release/"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 	<unit id="org.palladiosimulator.branding.feature.feature.group" version="0.0.0"/>
