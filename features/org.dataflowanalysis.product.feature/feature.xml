@@ -169,5 +169,9 @@
       <!-- DFD Metamodel-->
       <import feature="org.dataflowanalysis.dfd.datadictionary.feature" version="1.0.0" match="compatible"/>
       <import feature="org.dataflowanalysis.dfd.dataflowdiagram.feature" version="1.0.0" match="compatible"/>
+      <!-- Jackson-->
+      <import plugin="com.fasterxml.jackson.core.jackson-annotations" version="2.13.2" match="greaterOrEqual"/>
+      <import plugin="com.fasterxml.jackson.core.jackson-core" version="2.13.2" match="greaterOrEqual"/>
+      <import plugin="com.fasterxml.jackson.core.jackson-databind" version="2.13.2" match="greaterOrEqual"/>
    </requires>
 </feature>
