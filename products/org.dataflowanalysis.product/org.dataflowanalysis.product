@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="DataFlowAnalysis Product" uid="org.dataflowanalysis.product" id="org.dataflowanalysis.product.DataFlowAnalysisProduct" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="DataFlowAnalysisBench" uid="org.dataflowanalysis.product.ui" id="org.dataflowanalysis.product.DataFlowAnalysisProduct" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
 
    <aboutInfo>
       <image path="/org.dataflowanalysis.product/icons/about/250x250.png"/>
@@ -32,11 +32,11 @@ https://www.dataflowanalysis.org
 
    <splash
       location="org.dataflowanalysis.product" />
-   <launcher name="DataFlowAnalysis Product">
-      <linux icon="/org.dataflowanalysis.product/icons/task/linux.xpm"/>
-      <macosx icon="/org.dataflowanalysis.product/icons/task/macos.icns"/>
+   <launcher name="DataFlowAnalysisBench">
+      <linux icon="/icons/task/linux.xpm"/>
+      <macosx icon="/icons/task/macos.icns"/>
       <win useIco="true">
-         <ico path="/org.dataflowanalysis.product/icons/task/windows.ico"/>
+         <ico path="/icons/task/windows.ico"/>
          <bmp/>
       </win>
    </launcher>
@@ -47,7 +47,6 @@ https://www.dataflowanalysis.org
       <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</macos>
       <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</windows>
    </vm>
-
 
    <plugins>
    </plugins>
