@@ -4,7 +4,7 @@
 <product name="DataFlowAnalysis Product" uid="org.dataflowanalysis.product" id="org.dataflowanalysis.product.DataFlowAnalysisProduct" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
 
    <aboutInfo>
-      <image path="/org.palladiosimulator.pcm.ui/about.png"/>
+      <image path="/org.dataflowanalysis.product/icons/about/250x250.png"/>
       <text>
          This is the Data Flow Analysis product build, which is preconfigured with the DataFlowAnalysis Core Features.
 
@@ -28,17 +28,26 @@ https://www.dataflowanalysis.org
       </vmArgsMac>
    </launcherArgs>
 
+   <windowImages i16="/org.dataflowanalysis.product/icons/window/16x16.png" i32="/org.dataflowanalysis.product/icons/window/32x32.png" i48="/org.dataflowanalysis.product/icons/window/48x48.png" i64="/org.dataflowanalysis.product/icons/window/64x64.png" i128="/org.dataflowanalysis.product/icons/window/128x128.png" i256="/org.dataflowanalysis.product/icons/window/256x256.png"/>
+
+   <splash
+      location="org.dataflowanalysis.product" />
    <launcher name="DataFlowAnalysis Product">
-      <win useIco="false">
+      <linux icon="/org.dataflowanalysis.product/icons/task/linux.xpm"/>
+      <macosx icon="/org.dataflowanalysis.product/icons/task/macos.icns"/>
+      <win useIco="true">
+         <ico path="/org.dataflowanalysis.product/icons/task/windows.ico"/>
          <bmp/>
       </win>
    </launcher>
+
 
    <vm>
       <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</linux>
       <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</macos>
       <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</windows>
    </vm>
+
 
    <plugins>
    </plugins>
