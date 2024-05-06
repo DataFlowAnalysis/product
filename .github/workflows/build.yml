@@ -9,6 +9,7 @@ jobs:
       use-display-output: true
       no-caching: true
       java-version: 17
+      release-version: '2.0.0'
       runner-label: ubuntu-latest
       deploy-updatesite: 'products/org.dataflowanalysis.product/target/deploy'
     secrets:
