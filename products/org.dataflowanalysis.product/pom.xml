@@ -14,7 +14,7 @@
 	<packaging>eclipse-repository</packaging>
 
 	<properties>
-		<product.id>org.dataflowanalysis.product</product.id>
+		<product.id>org.dataflowanalysis.product.ui</product.id>
 	</properties>
 
 	<build>
