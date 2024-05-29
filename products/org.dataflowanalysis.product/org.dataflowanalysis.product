@@ -49,6 +49,7 @@ https://www.dataflowanalysis.org
    </vm>
 
    <plugins>
+      <plugin id="org.dataflowanalysis.product" installMode="root"/>
    </plugins>
 
    <features>
