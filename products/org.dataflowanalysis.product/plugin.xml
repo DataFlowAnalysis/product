@@ -1,39 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-
-   <extension
-         id="DataFlowAnalysisBench"
-         point="org.eclipse.core.runtime.products">
-      <product
-            name="DataFlowAnalysisBench"
-            application="org.eclipse.ui.ide.workbench">
-         <property
-               name="appName"
-               value="DataFlowAnalysisBench">
-         </property>
-         <property
-               name="aboutText"
-               value="This is the Data Flow Analysis product build, which is preconfigured with the DataFlowAnalysis Core Features.&#x0A;&#x0A;Version: DataFlowAnalysis Product 1.0.0&#x0A;&#x0A;We are awesome.&#x0A;&#x0A;https://www.dataflowanalysis.com">
-         </property>
-         <property
-               name="windowImages"
-               value="icons/window/16x16.png,icons/window/32x32.png,icons/window/48x48.png,icons/window/64x64.png,icons/window/128x128.png,icons/window/256x256.png">
-         </property>
-         <property name="aboutImage" value="icons/about/250x250.png"/>
-         <property name="featureImage" value="icons/window/32x32.png"/>
-      </product>
-   </extension>
    <extension
          id="DataFlowAnalysisProduct"
          point="org.eclipse.core.runtime.products">
       <product
-            application="org.eclipse.ui.ide.workbench"
-            name="DataFlowAnalysisBench">
-         <property
-               name="windowImages"
-               value="icons/window/16x16.png,icons/window/32x32.png,icons/window/48x48.png,icons/window/64x64.png,icons/window/128x128.png,icons/window/256x256.png">
-         </property>
+			name="DataFlowAnalysisBench"
+            application="org.eclipse.ui.ide.workbench">
          <property
                name="aboutText"
                value="This is the Data Flow Analysis product build, which is preconfigured with the DataFlowAnalysis Core Features.&#x0A;&#x0A;Version: DataFlowAnalysis Product 2.0.0&#x0A;&#x0A;We are awesome.&#x0A;&#x0A;https://www.dataflowanalysis.org">
@@ -42,7 +15,18 @@
                name="aboutImage"
                value="icons/about/250x250.png">
          </property>
+		 <property
+               name="windowImages"
+               value="icons/window/16x16.png,icons/window/32x32.png,icons/window/48x48.png,icons/window/64x64.png,icons/window/128x128.png,icons/window/256x256.png">
+         </property>
+		 <property
+               name="appName"
+               value="DataFlowAnalysisBench">
+         </property>
+		 <property 
+				name="featureImage" 
+				value="icons/window/32x32.png">
+		 </property>
       </product>
    </extension>
-
 </plugin>
