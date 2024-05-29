@@ -102,6 +102,7 @@
 		<module>releng</module>
 		<module>features</module>
 		<module>products</module>
+		<module>bundles</module>
 	</modules>
 	
 </project>

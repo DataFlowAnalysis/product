@@ -16,7 +16,7 @@
       [Enter License Description here.]
    </license>
 
-   <requires>	  
+   <requires>
       <import plugin="org.eclipse.core.runtime" version="3.26.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.core.resources" version="3.18.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.core.databinding" version="1.4.2" match="greaterOrEqual"/>
@@ -127,7 +127,6 @@
       <import feature="org.eclipse.rcp" version="4.27.0" match="compatible"/>
       <import feature="de.itemis.xtext.antlr.feature" version="2.1.1" match="compatible"/>
       <import plugin="org.junit.jupiter.api" version="5.9.1" match="compatible"/>
-      <!-- Palladio/MDSD-Tools -->
       <import plugin="de.uka.ipd.sdq.identifier"/>
       <import plugin="de.uka.ipd.sdq.probfunction"/>
       <import plugin="de.uka.ipd.sdq.stoex"/>
@@ -162,16 +161,19 @@
       <import plugin="org.palladiosimulator.architecturaltemplates.ui" version="5.2.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.pcm.stoex.ui" version="5.2.0" match="greaterOrEqual"/>
       <import feature="org.palladiosimulator.editors.sirius.feature" version="5.2.0" match="compatible"/>
-      <!--Data Flow Analysis-->
       <import feature="org.dataflowanalysis.analysis.feature" version="2.0.0" match="compatible"/>
-      <!--PCM Data Flow Analysis Extension-->
       <import feature="org.dataflowanalysis.pcm.extension.feature" version="5.2.0" match="compatible"/>
-      <!-- DFD Metamodel-->
       <import feature="org.dataflowanalysis.dfd.datadictionary.feature" version="2.0.0" match="compatible"/>
       <import feature="org.dataflowanalysis.dfd.dataflowdiagram.feature" version="2.0.0" match="compatible"/>
-      <!-- Jackson-->
       <import plugin="com.fasterxml.jackson.core.jackson-annotations" version="2.13.2" match="greaterOrEqual"/>
       <import plugin="com.fasterxml.jackson.core.jackson-core" version="2.13.2" match="greaterOrEqual"/>
       <import plugin="com.fasterxml.jackson.core.jackson-databind" version="2.13.2" match="greaterOrEqual"/>
    </requires>
+
+   <plugin
+         id="org.dataflowanalysis.product.branding"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
 </feature>
