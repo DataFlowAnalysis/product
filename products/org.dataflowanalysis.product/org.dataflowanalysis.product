@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="DataFlowAnalysisBench" uid="org.dataflowanalysis.product.ui" id="org.dataflowanalysis.product.DataFlowAnalysisProduct" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="DataFlowAnalysisBench" uid="org.dataflowanalysis.product" id="org.dataflowanalysis.product.branding.DataFlowAnalysisBench" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
 
    <aboutInfo>
-      <image path="/org.dataflowanalysis.product/icons/about/250x250.png"/>
+      <image path="/org.dataflowanalysis.product.branding/icons/about/250x250.png"/>
       <text>
          This is the Data Flow Analysis product build, which is preconfigured with the DataFlowAnalysis Core Features.
 
@@ -20,7 +20,7 @@ https://www.dataflowanalysis.org
    </configIni>
 
    <launcherArgs>
-      <programArgs>-consoleLog -console -perspective org.palladiosimulator.pcmbench.perspectives.palladio --launcher.defaultAction openFile --launcher.appendVmargs
+      <programArgs>-consoleLog -console --launcher.defaultAction openFile --launcher.appendVmargs
       </programArgs>
       <vmArgs>-Dsun.java.command=Eclipse -XX:+UseG1GC -XX:+UseStringDeduplication -Dosgi.requiredJavaVersion=17 -Dosgi.dataAreaRequiresExplicitInit=true -Dorg.eclipse.swt.graphics.Resource.reportNonDisposed=true -Xms256m -Xmx2048m --add-modules=ALL-SYSTEM
       </vmArgs>
@@ -28,19 +28,18 @@ https://www.dataflowanalysis.org
       </vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/org.dataflowanalysis.product/icons/window/16x16.png" i32="/org.dataflowanalysis.product/icons/window/32x32.png" i48="/org.dataflowanalysis.product/icons/window/48x48.png" i64="/org.dataflowanalysis.product/icons/window/64x64.png" i128="/org.dataflowanalysis.product/icons/window/128x128.png" i256="/org.dataflowanalysis.product/icons/window/256x256.png"/>
+   <windowImages i16="/org.dataflowanalysis.product.branding/icons/window/16x16.png" i32="/org.dataflowanalysis.product.branding/icons/window/32x32.png" i48="/org.dataflowanalysis.product.branding/icons/window/48x48.png" i64="/org.dataflowanalysis.product.branding/icons/window/64x64.png" i128="/org.dataflowanalysis.product.branding/icons/window/128x128.png" i256="/org.dataflowanalysis.product.branding/icons/window/256x256.png"/>
 
    <splash
-      location="org.dataflowanalysis.product" />
+      location="org.dataflowanalysis.product.branding" />
    <launcher name="DataFlowAnalysisBench">
-      <linux icon="/icons/task/linux.xpm"/>
-      <macosx icon="/icons/task/macos.icns"/>
+      <linux icon="icons/task/linux.xpm"/>
+      <macosx icon="icons/task/macos.icns"/>
       <win useIco="true">
-         <ico path="/icons/task/windows.ico"/>
+         <ico path="icons/task/windows.ico"/>
          <bmp/>
       </win>
    </launcher>
-
 
    <vm>
       <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</linux>
@@ -83,6 +82,7 @@ https://www.dataflowanalysis.org
       <feature id="org.eclipse.equinox.p2.discovery.feature" installMode="root"/>
       <feature id="org.eclipse.userstorage" installMode="root"/>
       <feature id="org.eclipse.oomph.p2" installMode="root"/>
+      <feature id="org.dataflowanalysis.analysis.feature" installMode="root"/>
       <feature id="org.dataflowanalysis.product.feature" installMode="root"/>
    </features>
 
