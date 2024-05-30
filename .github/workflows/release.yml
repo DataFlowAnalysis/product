@@ -8,15 +8,23 @@ jobs:
   build:
     runs-on: 'self-hosted'
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Deploy release in Main Repo
-        uses: softprops/action-gh-release@v2
-        with:
-          generate_release_notes: true
-          repository: DataFlowAnalysis/product
-          files: |
-            products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.linux.gtk.x86_64.zip
-            products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.macosx.cocoa.x86_64.zip
-            products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.win32.win32.x86_64.zip
-            products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.macosx.cocoa.aarch64.zip
+    - name: Build product
+      uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@v3.4
+      with:
+        use-display-output: true
+        no-caching: true
+        java-version: 17
+        runner-label: ubuntu-latest
+        deploy-updatesite: 'products/org.dataflowanalysis.product/target/deploy'
+      env:
+        SKIP_DEPLOY: true
+    - name: Deploy release in Main Repo
+      uses: softprops/action-gh-release@v2
+      with:
+        generate_release_notes: true
+        repository: DataFlowAnalysis/product
+        files: |
+          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.linux.gtk.x86_64.zip
+          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.macosx.cocoa.x86_64.zip
+          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.win32.win32.x86_64.zip
+          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.macosx.cocoa.aarch64.zip
