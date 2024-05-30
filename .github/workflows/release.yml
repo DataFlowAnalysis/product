@@ -8,17 +8,34 @@ jobs:
   build:
     runs-on: 'self-hosted'
     steps:
-    - name: Build product
-      uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@v3.4
+    - name: Checkout Repository
+      uses: actions/checkout@v3
       with:
-        use-display-output: true
-        no-caching: true
+        repository: ${{ inputs.build-repository }}
+        submodules: true
+      
+    - name: Set up JDK
+      uses: actions/setup-java@v3.10.0
+      with:
+        distribution: 'temurin'
         java-version: 17
-        runner-label: ubuntu-latest
-        deploy-updatesite: 'products/org.dataflowanalysis.product/target/deploy'
-      env:
-        SKIP_DEPLOY: true
-    - name: Deploy release in Main Repo
+
+    - name: Cache local Maven repository
+      if: ${{ inputs.no-caching == false }}
+      continue-on-error: true
+      timeout-minutes: 15
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2/repository
+        key: palladio-maven-java-17
+        restore-keys: |
+          palladio-maven-java-17
+      
+    - name: Verify with Maven
+      shell: bash
+      run: mvn clean verify
+
+    - name: Add artifacts to release
       uses: softprops/action-gh-release@v2
       with:
         generate_release_notes: true
