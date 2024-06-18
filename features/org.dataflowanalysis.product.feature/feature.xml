@@ -166,6 +166,7 @@
       <import feature="org.dataflowanalysis.pcm.extension.feature" version="5.2.0" match="compatible"/>
       <import feature="org.dataflowanalysis.dfd.datadictionary.feature" version="2.0.0" match="compatible"/>
       <import feature="org.dataflowanalysis.dfd.dataflowdiagram.feature" version="2.0.0" match="compatible"/>
+      <import feature="org.dataflowanalysis.converter.feature" version="2.0.0" match="compatible"/>
       <import plugin="com.fasterxml.jackson.core.jackson-annotations" version="2.13.2" match="greaterOrEqual"/>
       <import plugin="com.fasterxml.jackson.core.jackson-core" version="2.13.2" match="greaterOrEqual"/>
       <import plugin="com.fasterxml.jackson.core.jackson-databind" version="2.13.2" match="greaterOrEqual"/>
