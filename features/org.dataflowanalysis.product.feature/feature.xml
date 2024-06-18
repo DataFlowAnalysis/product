@@ -170,6 +170,10 @@
       <import plugin="com.fasterxml.jackson.core.jackson-annotations" version="2.13.2" match="greaterOrEqual"/>
       <import plugin="com.fasterxml.jackson.core.jackson-core" version="2.13.2" match="greaterOrEqual"/>
       <import plugin="com.fasterxml.jackson.core.jackson-databind" version="2.13.2" match="greaterOrEqual"/>
+      <import feature="org.dataflowanalysis.dfd.datadictionary.feature.source" version="2.0.0" match="compatible"/>
+      <import feature="org.dataflowanalysis.dfd.dataflowdiagram.feature.source" version="2.0.0" match="compatible"/>
+      <import feature="org.dataflowanalysis.analysis.feature.source" version="2.0.0" match="compatible"/>
+      <import feature="org.dataflowanalysis.examplemodels.feature" version="2.0.0" match="compatible"/>
    </requires>
 
    <plugin
