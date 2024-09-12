@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="DataFlowAnalysisBench" uid="org.dataflowanalysis.product" id="org.dataflowanalysis.product.branding.DataFlowAnalysisBench" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="DataFlowAnalysisBench" uid="org.dataflowanalysis.product" id="org.dataflowanalysis.product.branding.DataFlowAnalysisBench" application="org.eclipse.ui.ide.workbench" version="3.0.0.qualifier" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
 
    <aboutInfo>
       <image path="/org.dataflowanalysis.product.branding/icons/about/250x250.png"/>
       <text>
          This is the Data Flow Analysis product build, which is preconfigured with the DataFlowAnalysis Core Features.
 
-Version: DataFlowAnalysis Product 2.0.0
+Version: DataFlowAnalysis Product 3.0.0
 
 We are awesome.
 
