@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Text Editor</title>
+  </head>
+  <body>
+    <canvas id="main"></canvas>
+    <br />
+    <h3>Usage</h3>
+    <ol>
+      <li>
+        Use Windows or another operating system where the Consolas font is
+        available (keeping things simple)
+      </li>
+      <li>Alter the javascript code to show the correct version number</li>
+      <li>Download the generated image</li>
+      <li>
+        Convert the image to a bitmap (.bmp) file and replace the existing one
+        in the bundle (i.e., just use MS Paint).
+      </li>
+    </ol>
+
+    <script>
+      const version = "4.0.0";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const canvas = document.getElementById("main");
+        const ctx = canvas.getContext("2d");
+        const img = new Image();
+        img.src = "splash.png";
+
+        img.onload = function () {
+          canvas.width = 750;
+          canvas.height = 420;
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+          ctx.font = "30px Consolas";
+          ctx.fillStyle = "white";
+          ctx.fillText("Data Flow Analysis", 50, 350);
+          ctx.font = "20px Consolas";
+          ctx.fillText(`Version ${version}`, 50, 380);
+        };
+      });
+    </script>
+  </body>
+</html>
