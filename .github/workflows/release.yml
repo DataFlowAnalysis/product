@@ -37,7 +37,7 @@ jobs:
         generate_release_notes: true
         repository: DataFlowAnalysis/product
         files: |
-          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.linux.gtk.x86_64.zip
-          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.macosx.cocoa.x86_64.zip
+          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.linux.gtk.x86_64.tar.gz
+          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.macosx.cocoa.x86_64.tar.gz
           products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.win32.win32.x86_64.zip
-          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.macosx.cocoa.aarch64.zip
+          products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.macosx.cocoa.aarch64.tar.gz
