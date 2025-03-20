@@ -14,7 +14,7 @@
          </property>
          <property
                name="aboutText"
-               value="This is the Data Flow Analysis product build, which is preconfigured with the DataFlowAnalysis Core Features.&#x0A;&#x0A;Version: DataFlowAnalysis Product 3.0.0&#x0A;&#x0A;We are awesome.&#x0A;&#x0A;https://www.dataflowanalysis.org">
+               value="This is the Data Flow Analysis product build, which is preconfigured with the DataFlowAnalysis Core Features.&#x0A;&#x0A;Version: DataFlowAnalysis Product 4.0.0&#x0A;&#x0A;We are awesome.&#x0A;&#x0A;https://www.dataflowanalysis.org">
          </property>
          <property
                name="windowImages"
