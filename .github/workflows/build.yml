@@ -3,8 +3,33 @@ name: Build Updatesite
 on: workflow_dispatch
 
 jobs:
-  DataFlowAnalysis-Product:
+  build-product:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        submodules: true
+      
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: 17
+    - name: Setup Maven
+      uses: stCarolas/setup-maven@v5
+      with:
+        maven-version: 3.9.6      
+    - name: Verify with Maven
+      shell: bash
+      run: mvn clean verify
+
+    - name: Create jar-only build
+      shell: bash 
+      run: scripts/create-jar-only-build.sh
+  deploy-product:
     uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@master
+    needs: build-product
     with:
       use-display-output: true
       no-caching: true
