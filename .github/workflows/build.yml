@@ -23,22 +23,31 @@ jobs:
     - name: Verify with Maven
       shell: bash
       run: mvn clean verify
-
     - name: Create jar-only build
       shell: bash 
       run: scripts/create-jar-only-build.sh
-  deploy-product:
-    uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@master
-    needs: build-product
-    with:
-      use-display-output: true
-      no-caching: true
-      java-version: 17
-      runner-label: ubuntu-latest
-      deploy-updatesite: 'products/org.dataflowanalysis.product/target/deploy'
-    secrets:
-      SERVER_SSH_KEY: ${{ secrets.PALLADIO_UPDATESITE_SSH }}
-      REMOTE_HOST: ${{ secrets.PALLADIO_REMOTE_HOST }}
-      REMOTE_PORT: ${{ secrets.PALLADIO_REMOTE_PORT }}
-      REMOTE_USER: ${{ secrets.PALLADIO_REMOTE_USER }}
-      REMOTE_TARGET: ${{ secrets.PALLADIO_REMOTE_TARGET }}
+    - name: Create folder name
+      shell: bash
+      run: echo "DEPLOY_FOLDER=$( echo ${{ github.repository }} | cut -d'/' -f2 | sed -e 's/\(.*\)/\L\1/' )" >> $GITHUB_ENV
+    - name: Create project deployment path
+      shell: bash
+      run: echo "PROJECT_DEPLOY_PATH=$( echo '${{ secrets.PALLADIO_REMOTE_TARGET}}/${{ env.DEPLOY_FOLDER }}' )" >> $GITHUB_ENV
+    - name: Create Deployment Path
+      shell: bash
+      run: |
+        if ${{ github.ref_name == 'master' }} || ${{ github.ref_name == 'main' }}
+        then
+            echo "REMOTE_PATH=$( echo '${{ env.PROJECT_DEPLOY_PATH }}/nightly' )" >> $GITHUB_ENV
+        else
+            echo "REMOTE_PATH=$( echo '${{ env.PROJECT_DEPLOY_PATH }}/branches/${{ github.ref_name }}' )" >> $GITHUB_ENV
+        fi
+    - name: Deploy to Updatesite
+      uses: PalladioSimulator/Palladio-Build-ActionsPipeline-Deployment@v3
+      with:
+        remote-user: ${{ secrets.PALLADIO_REMOTE_USER }}
+        remote-host: ${{ secrets.PALLADIO_REMOTE_HOST }}
+        remote-port: ${{ secrets.PALLADIO_REMOTE_PORT }}
+        server-ssh-key: ${{ secrets.PALLADIO_UPDATESITE_SSH }}
+        local-source: './products/org.dataflowanalysis.product/target/deploy/*'
+        remote-target: ${{ env.REMOTE_PATH }}
+        link-path: ${{ env.PROJECT_DEPLOY_PATH }} 
