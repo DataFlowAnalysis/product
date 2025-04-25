@@ -45,3 +45,22 @@ jobs:
           products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.win32.win32.x86_64.zip
           products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.macosx.cocoa.aarch64.tar.gz
           products/org.dataflowanalysis.product/target/deploy/DataFlowAnalysis.jars.tar.gz
+    - name: Determine name of deployment folder
+      shell: bash
+      run: echo "DEPLOY_FOLDER=$( echo ${{ github.repository }} | cut -d'/' -f2 | sed -e 's/\(.*\)/\L\1/' )" >> $GITHUB_ENV
+    - name: Determine deployment path
+      shell: bash
+      run: echo "PROJECT_DEPLOY_PATH=$( echo '${{ secrets.PALLADIO_REMOTE_TARGET}}/${{ env.DEPLOY_FOLDER }}' )" >> $GITHUB_ENV
+    - name: Determine deployment folder suffix
+      shell: bash
+      run: echo "REMOTE_PATH=$( echo '${{ env.PROJECT_DEPLOY_PATH }}/releases/${{ github.event.release.tag_name }}' )" >> $GITHUB_ENV 
+    - name: Deploy to Updatesite
+      uses: PalladioSimulator/Palladio-Build-ActionsPipeline-Deployment@v3
+      with:
+        remote-user: ${{ secrets.PALLADIO_REMOTE_USER }}
+        remote-host: ${{ secrets.PALLADIO_REMOTE_HOST }}
+        remote-port: ${{ secrets.PALLADIO_REMOTE_PORT }}
+        server-ssh-key: ${{ secrets.PALLADIO_UPDATESITE_SSH }}
+        local-source: './products/org.dataflowanalysis.product/target/deploy/*'
+        remote-target: ${{ env.REMOTE_PATH }}
+        link-path: ${{ env.PROJECT_DEPLOY_PATH }} 

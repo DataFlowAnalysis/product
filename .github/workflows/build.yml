@@ -26,13 +26,13 @@ jobs:
     - name: Create jar-only build
       shell: bash 
       run: scripts/create-jar-only-build.sh
-    - name: Create folder name
+    - name: Determine remote folder name
       shell: bash
       run: echo "DEPLOY_FOLDER=$( echo ${{ github.repository }} | cut -d'/' -f2 | sed -e 's/\(.*\)/\L\1/' )" >> $GITHUB_ENV
-    - name: Create project deployment path
+    - name: Determine remote folder location
       shell: bash
       run: echo "PROJECT_DEPLOY_PATH=$( echo '${{ secrets.PALLADIO_REMOTE_TARGET}}/${{ env.DEPLOY_FOLDER }}' )" >> $GITHUB_ENV
-    - name: Create Deployment Path
+    - name: Determine remote folder suffix
       shell: bash
       run: |
         if ${{ github.ref_name == 'master' }} || ${{ github.ref_name == 'main' }}
