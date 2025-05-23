@@ -23,7 +23,7 @@
     </ol>
 
     <script>
-      const version = "4.0.0";
+      const version = "5.0.0";
 
       document.addEventListener("DOMContentLoaded", function () {
         const canvas = document.getElementById("main");
@@ -35,12 +35,14 @@
           canvas.width = 750;
           canvas.height = 420;
           ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          const start = 65;
 
           ctx.font = "30px Consolas";
           ctx.fillStyle = "white";
-          ctx.fillText("Data Flow Analysis", 50, 350);
+          ctx.fillText("DFA — The Karlsruhe Data", 50, start);
+          ctx.fillText("Flow Diagram Analysis", 50, start + 30)
           ctx.font = "20px Consolas";
-          ctx.fillText(`Version ${version}`, 50, 380);
+          ctx.fillText(`Version ${version}`, 50, start + 60);
         };
       });
     </script>
