@@ -14,7 +14,7 @@
         Use Windows or another operating system where the Consolas font is
         available (keeping things simple)
       </li>
-      <li>Alter the javascript code to show the correct version number</li>
+      <li>Alter the javascript code to show the correct version number (open the .html-file and edit line 26)</li>
       <li>Download the generated image</li>
       <li>
         Convert the image to a bitmap (.bmp) file and replace the existing one
@@ -35,14 +35,19 @@
           canvas.width = 750;
           canvas.height = 420;
           ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-          const start = 65;
+          const start = 70;
+          const lineHeight = 30;
 
-          ctx.font = "30px Consolas";
           ctx.fillStyle = "white";
-          ctx.fillText("DFA — The Karlsruhe Data", 50, start);
-          ctx.fillText("Flow Diagram Analysis", 50, start + 30)
+          ctx.font = "40px Consolas";
+          ctx.fillText("xDECAF", 50, start);
+          ctx.font = "25px Consolas";
+          ctx.fillText("An extensible data", 50, start + lineHeight);
+          ctx.fillText("flow diagram constraint", 50, start + 2 * lineHeight)
+          ctx.fillText("analysis framework for", 50, start + 3 * lineHeight)
+          ctx.fillText("information security", 50, start + 4 * lineHeight)
           ctx.font = "20px Consolas";
-          ctx.fillText(`Version ${version}`, 50, start + 60);
+          ctx.fillText(`Version ${version}`, 50, start + 6 * lineHeight);
         };
       });
     </script>
