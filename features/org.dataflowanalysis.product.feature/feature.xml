@@ -61,15 +61,15 @@
       <import feature="org.eclipse.emf.mwe2.language.sdk"/>
       <import plugin="org.apache.commons.io" version="2.6.0" match="greaterOrEqual"/>
       <import plugin="com.google.guava" version="30.1.0" match="compatible"/>
-      <import plugin="org.eclipse.sirius" version="7.0.6" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.sirius.common" version="7.0.6" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.sirius.common.ui" version="7.0.6" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.sirius.ecore.extender" version="7.0.6" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.sirius.ui" version="7.0.6" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.sirius.ui.editor" version="7.0.6" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.sirius" version="7.0.7" match="equivalent"/>
+      <import plugin="org.eclipse.sirius.common" version="7.0.7" match="equivalent"/>
+      <import plugin="org.eclipse.sirius.common.ui" version="7.0.7" match="equivalent"/>
+      <import plugin="org.eclipse.sirius.ecore.extender" version="7.0.7" match="equivalent"/>
+      <import plugin="org.eclipse.sirius.ui" version="7.0.7" match="equivalent"/>
+      <import plugin="org.eclipse.sirius.ui.editor" version="7.0.7" match="equivalent"/>
       <import plugin="org.eclipse.sirius.common.acceleo.mtl" version="3.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.sirius.common.acceleo.aql" version="7.0.6" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.sirius.diagram"/>
+      <import plugin="org.eclipse.sirius.common.acceleo.aql" version="7.0.7" match="equivalent"/>
+      <import plugin="org.eclipse.sirius.diagram" version="7.0.7" match="equivalent"/>
       <import plugin="org.eclipse.ui.views"/>
       <import plugin="org.eclipse.ui.console" version="3.5.300" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui" version="3.201.200" match="greaterOrEqual"/>
@@ -116,7 +116,7 @@
       <import feature="org.eclipse.equinox.p2.user.ui" version="2.4.1800" match="compatible"/>
       <import feature="org.eclipse.platform" version="4.27.0" match="compatible"/>
       <import feature="org.eclipse.sdk" version="4.27.0" match="compatible"/>
-      <import feature="org.eclipse.sirius.runtime" version="7.0.6" match="compatible"/>
+      <import feature="org.eclipse.sirius.runtime" version="7.0.7" match="equivalent"/>
       <import feature="org.eclipse.jdt" version="3.18.0" match="compatible"/>
       <import feature="org.eclipse.e4.rcp" version="4.27.0" match="compatible"/>
       <import feature="org.eclipse.epp.mpc" version="1.10.1"/>
