@@ -15,14 +15,19 @@ jobs:
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
-        java-version: 17
+        java-version: 21
+        server-id: github
+        server-username: GITHUB_ACTOR
+        server-password: GITHUB_TOKEN
     - name: Setup Maven
       uses: stCarolas/setup-maven@v5
       with:
-        maven-version: 3.9.6      
+        maven-version: 3.9.6
     - name: Verify with Maven
       shell: bash
       run: mvn clean verify
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Create jar-only build
       shell: bash 
       run: scripts/create-jar-only-build.sh

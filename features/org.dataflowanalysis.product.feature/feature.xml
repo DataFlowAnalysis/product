@@ -162,18 +162,21 @@
       <import plugin="org.palladiosimulator.architecturaltemplates.ui" version="5.2.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.pcm.stoex.ui" version="5.2.0" match="greaterOrEqual"/>
       <import feature="org.palladiosimulator.editors.sirius.feature" version="5.2.0" match="compatible"/>
-      <import feature="org.dataflowanalysis.analysis.feature" version="5.0.0" match="compatible"/>
       <import feature="org.dataflowanalysis.pcm.extension.feature" version="5.2.0" match="compatible"/>
-      <import feature="org.dataflowanalysis.dfd.datadictionary.feature" version="5.0.0" match="compatible"/>
-      <import feature="org.dataflowanalysis.dfd.dataflowdiagram.feature" version="5.0.0" match="compatible"/>
-      <import feature="org.dataflowanalysis.converter.feature" version="5.0.0" match="compatible"/>
       <import plugin="com.fasterxml.jackson.core.jackson-annotations" version="2.13.2" match="greaterOrEqual"/>
       <import plugin="com.fasterxml.jackson.core.jackson-core" version="2.13.2" match="greaterOrEqual"/>
       <import plugin="com.fasterxml.jackson.core.jackson-databind" version="2.13.2" match="greaterOrEqual"/>
-      <import feature="org.dataflowanalysis.dfd.datadictionary.feature.source" version="5.0.0" match="compatible"/>
-      <import feature="org.dataflowanalysis.dfd.dataflowdiagram.feature.source" version="5.0.0" match="compatible"/>
-      <import feature="org.dataflowanalysis.analysis.feature.source" version="5.0.0" match="compatible"/>
-      <import feature="org.dataflowanalysis.examplemodels.feature" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.analysis" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.analysis.pcm" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.analysis.dfd" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.converter" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.examplemodels" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.dfd.datadictionary" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.dfd.datadictionary.edit" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.dfd.datadictionary.editor" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.dfd.dataflowdiagram" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.dfd.dataflowdiagram.edit" version="5.0.0" match="compatible"/>
+      <import plugin="wrapped.org.dataflowanalysis.analysis.dfd.dataflowdiagram.editor" version="5.0.0" match="compatible"/>
    </requires>
 
    <plugin

@@ -22,7 +22,7 @@ https://www.dataflowanalysis.org
    <launcherArgs>
       <programArgs>--launcher.defaultAction openFile --launcher.appendVmargs
       </programArgs>
-      <vmArgs>-Dsun.java.command=Eclipse -XX:+UseG1GC -XX:+UseStringDeduplication -Dosgi.requiredJavaVersion=17 -Dosgi.dataAreaRequiresExplicitInit=true -Dorg.eclipse.swt.graphics.Resource.reportNonDisposed=true -Xms256m -Xmx4096m --add-modules=ALL-SYSTEM
+      <vmArgs>-Dsun.java.command=Eclipse -XX:+UseG1GC -XX:+UseStringDeduplication -Dosgi.requiredJavaVersion=21 -Dosgi.dataAreaRequiresExplicitInit=true -Dorg.eclipse.swt.graphics.Resource.reportNonDisposed=true -Xms256m -Xmx4096m --add-modules=ALL-SYSTEM
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
@@ -42,12 +42,23 @@ https://www.dataflowanalysis.org
    </launcher>
 
    <vm>
-      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</linux>
-      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</macos>
-      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17</windows>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21</linux>
+      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21</macos>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21</windows>
    </vm>
 
    <plugins>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.analysis" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.analysis.pcm" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.analysis.dfd" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.converter" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.examplemodels" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.dfd.datadictionary" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.dfd.datadictionary.edit" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.dfd.datadictionary.editor" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.dfd.dataflowdiagram" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.dfd.dataflowdiagram.edit" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.dfd.dataflowdiagram.editor" version="0.0.0"/>
    </plugins>
 
    <features>
@@ -81,7 +92,6 @@ https://www.dataflowanalysis.org
       <feature id="org.eclipse.equinox.p2.discovery.feature" installMode="root"/>
       <feature id="org.eclipse.userstorage" installMode="root"/>
       <feature id="org.eclipse.oomph.p2" installMode="root"/>
-      <feature id="org.dataflowanalysis.analysis.feature" installMode="root"/>
       <feature id="org.dataflowanalysis.product.feature" installMode="root"/>
    </features>
 

@@ -91,16 +91,81 @@
 	<unit id="org.apache.commons.math" version="0.0.0"/>
 	<repository location="https://download.eclipse.org/tools/orbit/downloads/2021-12/"/>
     </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-	<unit id="org.dataflowanalysis.dfd.datadictionary.feature.feature.group" version="0.0.0"/>
-	<unit id="org.dataflowanalysis.dfd.datadictionary.feature.source.feature.group" version="0.0.0"/>
-	<unit id="org.dataflowanalysis.dfd.dataflowdiagram.feature.feature.group" version="0.0.0"/>
-	<unit id="org.dataflowanalysis.dfd.dataflowdiagram.feature.source.feature.group" version="0.0.0"/>
-	<unit id="org.dataflowanalysis.analysis.feature.feature.group" version="0.0.0"/>
-	<unit id="org.dataflowanalysis.analysis.feature.source.feature.group" version="0.0.0"/>
-	<unit id="org.dataflowanalysis.converter.feature.feature.group" version="0.0.0"/>
-	<unit id="org.dataflowanalysis.examplemodels.feature.feature.group" version="0.0.0"/>
-      <repository location="https://dataflowanalysis.github.io/updatesite/nightly/dataflowanalysis"/>
+    <location includeDependencyDepth="none" includeSource="false" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>analysis</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>analysis.pcm</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>analysis.dfd</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>converter</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>examplemodels</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>dfd.datadictionary</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>dfd.datadictionary.edit</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>dfd.datadictionary.editor</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>dfd.dataflowdiagram</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>dfd.dataflowdiagram.edit</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.dataflowanalysis.analysis</groupId>
+          <artifactId>dfd.dataflowdiagram.editor</artifactId>
+          <version>5.0.0-SNAPSHOT</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+      <repositories>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/DataFlowAnalysis/DataFlowAnalysis</url>
+        </repository>
+      </repositories>
     </location>
 	<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 	<unit id="org.dataflowanalysis.pcm.extension.feature.feature.group" version="0.0.0"/>

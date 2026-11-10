@@ -51,7 +51,7 @@
 			<version>${tycho.version}</version>
 			<configuration>
 				<!-- Optional set the Java version you are using-->
-				<executionEnvironment>JavaSE-17</executionEnvironment>
+				<executionEnvironment>JavaSE-21</executionEnvironment>
 				<target>
 				  <file>../../releng/org.dataflowanalysis.product.targetplatform/org.dataflowanalysis.product.targetplatform.target</file>
 				</target>
