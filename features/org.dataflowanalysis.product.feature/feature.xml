@@ -120,6 +120,7 @@
       <import feature="org.eclipse.jdt" version="3.18.0" match="compatible"/>
       <import feature="org.eclipse.e4.rcp" version="4.27.0" match="compatible"/>
       <import feature="org.eclipse.epp.mpc" version="1.10.1"/>
+      <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.equinox.p2.discovery.feature" version="1.2.1200" match="compatible"/>
       <import feature="org.eclipse.equinox.p2.extras.feature" version="1.4.1800" match="compatible"/>
       <import feature="org.eclipse.oomph.p2" version="1.25.0" match="compatible"/>
