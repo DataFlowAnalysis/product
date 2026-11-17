@@ -48,9 +48,9 @@ https://www.dataflowanalysis.org
    </vm>
 
    <plugins>
-      <plugin id="wrapped.org.dataflowanalysis.analysis.analysis" version="0.0.0"/>
-      <plugin id="wrapped.org.dataflowanalysis.analysis.analysis.pcm" version="0.0.0"/>
-      <plugin id="wrapped.org.dataflowanalysis.analysis.analysis.dfd" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.core" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.pcm" version="0.0.0"/>
+      <plugin id="wrapped.org.dataflowanalysis.analysis.dfd" version="0.0.0"/>
       <plugin id="wrapped.org.dataflowanalysis.analysis.converter" version="0.0.0"/>
       <plugin id="wrapped.org.dataflowanalysis.analysis.examplemodels" version="0.0.0"/>
       <plugin id="wrapped.org.dataflowanalysis.analysis.dfd.datadictionary" version="0.0.0"/>

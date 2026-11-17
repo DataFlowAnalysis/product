@@ -96,19 +96,19 @@
       <dependencies>
         <dependency>
           <groupId>org.dataflowanalysis.analysis</groupId>
-          <artifactId>analysis</artifactId>
+          <artifactId>core</artifactId>
           <version>5.0.0-SNAPSHOT</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>org.dataflowanalysis.analysis</groupId>
-          <artifactId>analysis.pcm</artifactId>
+          <artifactId>pcm</artifactId>
           <version>5.0.0-SNAPSHOT</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>org.dataflowanalysis.analysis</groupId>
-          <artifactId>analysis.dfd</artifactId>
+          <artifactId>dfd</artifactId>
           <version>5.0.0-SNAPSHOT</version>
           <type>jar</type>
         </dependency>
@@ -162,9 +162,10 @@
         </dependency>
       </dependencies>
       <repositories>
+        <!-- TODO: switch to https://maven.dataflowanalysis.org once DNS is set up -->
         <repository>
-          <id>github</id>
-          <url>https://maven.pkg.github.com/DataFlowAnalysis/DataFlowAnalysis</url>
+          <id>dataflowanalysis</id>
+          <url>https://dataflowanalysis.github.io/maven</url>
         </repository>
       </repositories>
     </location>
